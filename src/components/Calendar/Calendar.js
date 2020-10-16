@@ -4,15 +4,17 @@ import FetchData from "../../services/FetchData";
 import {Link} from "react-router-dom";
 import Main from "../Main/Main";
 
+const fetchData = new FetchData();
+
+
 const Calendar = () => {
 
-    const fetchData = new FetchData();
     const [data, setData] = useState([]);
 
     useEffect(() => {
     fetchData.getLaunches()
         .then(launches => setData(launches))
-    }, [])
+    }, [fetchData])
 
     return ((
         <>
