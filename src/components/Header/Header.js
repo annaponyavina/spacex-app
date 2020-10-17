@@ -37,7 +37,7 @@ const Header = (props) => (
                              className="item-link">Home</NavLink>
                 </li>
                 <li className="item">
-                    <NavLink to='calendar'
+                    <NavLink to='/calendar'
                              activeClassName='active'
                              className="item-link">Calendar</NavLink>
                 </li>

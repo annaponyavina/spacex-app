@@ -2,7 +2,6 @@ import React from 'react';
 import {BrowserRouter, Route} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-import Main from "./components/Main/Main";
 import Calendar from "./components/Calendar/Calendar";
 import Details from "./components/Details/Details";
 import Features from "./components/Features/Features";
@@ -51,24 +50,21 @@ class App extends React.Component {
         this.fetchData.getCompany()
             .then(company => this.setState({company}))
     };
+
     render() {
         return (
             <BrowserRouter>
-                <Header rockets={this.state.rockets} changeRocket={this.changeRocket} />
-                <Route exact path='/'>
-                {this.state.company && <Home company={this.state.company}/>}
-                </Route>
-                <Route path='/rocket'>
-                    <Main rocket={this.state.rocket} />
-                    {this.state.rocketFeatures && <Features {...this.state.rocketFeatures} />}
-                </Route>
-                <Route path='/calendar'>
-                    <Calendar/>
-                </Route>
-                <Route path='/details'>
-                    <Details/>
-                </Route>
-                {this.state.company && <Footer {...this.state.company.links}/>}
+                <Header rockets={this.state.rockets} changeRocket={this.changeRocket}/>
+                <Route exact path='/' render={() => this.state.company &&
+                    <Home company={this.state.company}/>}/>
+                <Route
+                    path='/rocket'
+                    render={() => this.state.rocketFeatures &&
+                        <Features {...this.state.rocketFeatures} />}/>
+                <Route path='/calendar' component={Calendar}/>
+                <Route path='/details/:id' component={Details}/>
+                {this.state.company &&
+                <Footer {...this.state.company.links}/>}
             </BrowserRouter>
 
         );
