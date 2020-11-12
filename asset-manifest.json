@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/spacex-app/static/css/main.c32ecffb.chunk.css",
+    "main.js": "/spacex-app/static/js/main.841afe0f.chunk.js",
+    "main.js.map": "/spacex-app/static/js/main.841afe0f.chunk.js.map",
+    "runtime-main.js": "/spacex-app/static/js/runtime-main.1fa3d291.js",
+    "runtime-main.js.map": "/spacex-app/static/js/runtime-main.1fa3d291.js.map",
+    "static/js/2.55efbb58.chunk.js": "/spacex-app/static/js/2.55efbb58.chunk.js",
+    "static/js/2.55efbb58.chunk.js.map": "/spacex-app/static/js/2.55efbb58.chunk.js.map",
+    "index.html": "/spacex-app/index.html",
+    "precache-manifest.ca00849fa8ff4756aca48e295d6b5001.js": "/spacex-app/precache-manifest.ca00849fa8ff4756aca48e295d6b5001.js",
+    "service-worker.js": "/spacex-app/service-worker.js",
+    "static/css/main.c32ecffb.chunk.css.map": "/spacex-app/static/css/main.c32ecffb.chunk.css.map",
+    "static/js/2.55efbb58.chunk.js.LICENSE.txt": "/spacex-app/static/js/2.55efbb58.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/spacex-app/static/media/logo.d5ab31ce.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fa3d291.js",
+    "static/js/2.55efbb58.chunk.js",
+    "static/css/main.c32ecffb.chunk.css",
+    "static/js/main.841afe0f.chunk.js"
+  ]
+}
