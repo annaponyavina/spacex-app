@@ -46,7 +46,7 @@ const Features = ({name, height, diameter, mass, payload_weights: payloadWeights
                 </table>
                 <RellaxWrapper speed={10}>
                     <img
-                        src={`img/${rocketImages[name]}.png`}
+                        src={require(`./assets/img/${rocketImages[name]}.png`)}
                         alt="rocket"
                         className="rocket"
                     />
