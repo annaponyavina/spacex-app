@@ -49,6 +49,7 @@ const Features = ({name, height, diameter, mass, payload_weights: payloadWeights
                         src={require(`./assets/img/${rocketImages[name]}.png`)}
                         alt="rocket"
                         className="rocket"
+                        loading={"lazy"}
                     />
                 </RellaxWrapper>
                 <article>

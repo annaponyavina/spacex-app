@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy} from "react";
 import './main.css';
 
 
@@ -20,11 +20,13 @@ const Main = ({rocket, name}) => {
             </h1>
             {rocket && <div className="video-container">
                 <video
+                    loading="lazy"
                     className="video"
                     autoPlay loop muted
                     src={require(`./assets/video/${video.hasOwnProperty(rocket) ? 
                     video[rocket] :
-                    video.other}.mp4`)}>
+                    video.other}.mp4`)}
+                    >
                 </video>
             </div>}
         </section>

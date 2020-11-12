@@ -1,12 +1,11 @@
 import React from 'react';
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route, Redirect} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Calendar from "./components/Calendar/Calendar";
 import Details from "./components/Details/Details";
 import Features from "./components/Features/Features";
 import Footer from "./components/Footer/Footer";
-
 import FetchData from "./services/FetchData";
 
 import './style.css'
@@ -54,6 +53,7 @@ class App extends React.Component {
     render() {
         return (
             <BrowserRouter>
+                <Redirect from='/spacex-app' to='/' />
                 <Header rockets={this.state.rockets} changeRocket={this.changeRocket}/>
                 <Route exact path='/' render={() => this.state.company &&
                     <Home company={this.state.company}/>}/>
