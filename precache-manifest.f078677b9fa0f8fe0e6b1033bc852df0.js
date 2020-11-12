@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83cb81305596254b9d3da8a9937d252c",
+    "revision": "3b680aa529741160f3567521995747d1",
     "url": "/spacex-app/index.html"
   },
   {
-    "revision": "871d2ce6bef8c896da37",
+    "revision": "705a1d30518d1b7f9bd1",
     "url": "/spacex-app/static/css/main.c32ecffb.chunk.css"
   },
   {
-    "revision": "3eb02852139a46cb3d43",
-    "url": "/spacex-app/static/js/2.ee1980ee.chunk.js"
+    "revision": "837e820ee208e447968c",
+    "url": "/spacex-app/static/js/2.8ac1f6bd.chunk.js"
   },
   {
     "revision": "8a9adb48f7af2062183ac70b4922c4ef",
-    "url": "/spacex-app/static/js/2.ee1980ee.chunk.js.LICENSE.txt"
+    "url": "/spacex-app/static/js/2.8ac1f6bd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "871d2ce6bef8c896da37",
-    "url": "/spacex-app/static/js/main.7b6d3594.chunk.js"
+    "revision": "705a1d30518d1b7f9bd1",
+    "url": "/spacex-app/static/js/main.40e482a6.chunk.js"
   },
   {
     "revision": "43007cde8bbe4a6ee8a6",
